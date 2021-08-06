@@ -1,4 +1,4 @@
-<h1 align="center">LancheAPI</h1>
+<h1 align="center">Lanche React</h1>
 <h1><img src="https://ik.imagekit.io/xguomcqgelu/lancheReact_Vil97alHi.gif?updatedAt=1628219639530"/></h1>
 
 ## 📚 Sobre
