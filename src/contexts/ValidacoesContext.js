@@ -1,5 +1,10 @@
 import React from 'react';
+import { validarSenha } from '../models/Validacoes';
 
-const validacoesContext = React.createContext();
+export const ValidacoesContext = React.createContext();
 
-export default validacoesContext;
+export const ValidacoesProvider = ({children}) =>{
+    return (
+        <ValidacoesContext.Provider value={{senha: validarSenha}}>{children}</ValidacoesContext.Provider>
+    );
+}

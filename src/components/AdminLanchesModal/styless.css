@@ -1,0 +1,133 @@
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container{
+    position: relative;
+    background-color: rgb(196, 193, 184);
+    width: 384px;
+    height: 560px;
+    border-radius: 20px;
+    padding-right: 5px;
+}
+.modal-content{
+    margin: 20px;
+    position: relative;
+}
+.modal-content-h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.modal-label-url{
+    display: block;
+    padding: 1px;
+    background-color: white;
+    width: 154px;
+    padding-left: 6px;
+    margin-left: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal-input-url{
+    display: block;
+    width: 99.7%;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+    margin-bottom: 5px;
+}
+.modal-content-img{
+    width: 102%;
+    height: 220px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.modal-label-name{
+    display: block;
+    padding: 1px;
+    background-color: white;
+    width: 50px;
+    padding-left: 7px;
+    margin-left: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal-input-name{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+    margin-bottom: 5px;
+    width: 164px;
+}
+.modal-label-preco{
+    position: absolute;
+    right: 104px;
+    top: 325px;
+    background-color: white;
+    padding: 1px;
+    padding-left: 6px;
+    width: 45px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.modal-input-Preco{
+    position: absolute;
+    right: -5px;
+    top: 343px;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+    width: 160px;
+}
+.modal-textAreaDescricao{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    resize: none;
+    height: 120px;
+}
+.modal-button-cancelar{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 140px;
+    margin-top: 5px;
+    transition: 0.4s;
+}
+.modal-button-cancelar:hover{
+    transition: 0.4s;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+.modal-button-add{
+    position: absolute;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    right: -4px;
+    margin-top: 5px;
+    transition: 0.4s;
+}
+.modal-button-add:hover{
+    transition: 0.4s;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}

@@ -13,7 +13,7 @@ const useErros = (validacoes)=>{
 
     const possoEnviar = ()=>{
         for(let campo in erros){
-            if(!erros[campo].value){
+            if(!erros[campo].valido){
                 return false
             };
         };

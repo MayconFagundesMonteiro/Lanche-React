@@ -1,43 +1,64 @@
 .navbar{
-    background-color: rgba(0, 0, 0, 0.582);
-    padding-bottom: 80px;
+    background-color: #a7621f;
+    height: 80px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 .navbar-div{
     position: relative;
     width: 940px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .navbar-home{
     text-decoration: none;
     text-transform: uppercase;
     position: absolute;
-    top: 28px;
+    top: 15px;
     color: white;
     font-weight: bold;
-    font-size: large;
+    font-size: 50px;
 }
 .navbar-pesquisa{
-    position: absolute;
-    display: inline;
-    right: 230px;
-    top: 26px;
+    margin-right: 10px;
+    right: 200px;
+    top: 23px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
 }
 .navbar-lista{
     position: absolute;
-    right: 0;
-    top: 28px;
+    right: 5px;
+    top: 25px;
 }
-.navbar-lista li{
+.navbar-carrinho{
     display: inline;
-    padding-left: 15px;
+    margin-right: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
 }
-.navbar-lista li :hover{
-    color: darkblue;
-    text-decoration: underline;
-    transition: 0.4s;
+.navbar-carrinho:hover{
+    transition: 0.3s;
+    background-color: #a67851;
 }
-.navbar-lista li a{
-    text-decoration: none;
+.navbar-conta{
+    display: inline;
+    padding: 10px;
+    border-radius: 5px;
+}
+.navbar-conta:hover{
+    transition: 0.3s;
+    background-color: #a67851;
+}
+.navbar a{
     text-transform: uppercase;
+    text-decoration: none;
     color: white;
 }
+

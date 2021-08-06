@@ -1,56 +1,64 @@
-import { React,useState } from 'react';
-import { useHistory,Link } from 'react-router-dom';
+import { React, useState } from 'react';
+import { useHistory, Link } from 'react-router-dom';
 import "./styless.css";
 import api from '../../services/api';
+import { NotificationContainer, NotificationManager } from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
+import swal from 'sweetalert';
 
 const Login = () => {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
     const history = useHistory();
 
-    async function login(event){
+    async function login(event) {
         event.preventDefault();
 
-        const data ={
+        const data = {
             email,
             senha
         }
-        try{
+        try {
             const response = await api.post("api/usuario/v1/login", data);
-            localStorage.setItem("usuario", response.data);
-            history.push("/");
+            sessionStorage.setItem("usuario", JSON.stringify(response.data));
+            swal("Logado com sucesso","","success").then((response) => {
+                if (response) {
+                    history.push("/");
+                }
+            })
         }
-        catch(error){
-            window.alert("Não foi possivel fazer login. E-mail ou senha invalidos.")
+        catch (error) {
+            NotificationManager.error("Não foi possivel fazer login. E-mail ou senha invalidos.");
         }
     }
 
     return (
-            <div className="divisor-login">
-                <form className="login" onSubmit={login}>
-                    <label className="l-email-login" for="email">Email</label>
-                    <input
+        <body className="body-login">
+            <NotificationContainer />
+            <form className="login" onSubmit={login}>
+                <h1>Login</h1>
+                <input
                     type="email"
-                    value={email} 
                     required
-                    onChange={e=>{setEmail(e.target.value)}} 
-                    error="sdsds"
-                    className="i-email-login"
+                    onChange={e => { setEmail(e.target.value) }}
+                    value={email}
+                    className="login-email"
                     id="email"
-                    />
-                    <label className="l-senha-login" for="senha">Senha</label>
-                    <input
+                    placeholder="Email"
+                />
+                <input
                     type="password"
-                    value={senha}
                     required
-                    onChange={e => {setSenha(e.target.value)}}
-                    className="i-senha-login"
+                    onChange={e => { setSenha(e.target.value) }}
+                    value={senha}
+                    className="login-senha"
                     id="senha"
-                    />
-                    <button type="submit">Login</button>
-                    <Link className="login-registro" to="/Register">Registrar-se</Link>
-                </form>
-            </div>
+                    placeholder="Senha"
+                />
+                <button className="login-submit" type="submit">Login</button>
+                <Link className="login-registro" to="/Register">Registrar-se</Link>
+            </form>
+        </body>
     );
 }
 

@@ -1,12 +1,17 @@
+import { ValidacoesProvider } from "./contexts/ValidacoesContext";
+import { CarrinhoProvider } from "./contexts/CarrinhoContext";
+import { SearchProvider } from "./contexts/SearchContext";
 import Routes from "./routes";
-import validacoesContext from "./contexts/ValidacoesContext";
-import { validarSenha } from "./models/Validacoes";
 
 function App() {
   return (
-    <validacoesContext.Provider value={{senha: validarSenha}}>
-      <Routes/>
-    </validacoesContext.Provider>
+    <CarrinhoProvider>
+      <ValidacoesProvider>
+        <SearchProvider>
+          <Routes />
+        </SearchProvider>
+      </ValidacoesProvider>
+    </CarrinhoProvider >
   );
 }
 

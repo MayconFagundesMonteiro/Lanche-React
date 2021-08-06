@@ -1,45 +1,56 @@
-.divisor-login{
-    width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 500px;
+.body-login {
+    background-image: linear-gradient(45deg,orange, #a67851);
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: 937px;
 }
-.login{
-    position: relative;
-    display: inline;
-}
-.l-email-login{
+.login {
     position: absolute;
-    font-size: 20px;
-    margin-top: 200px;
-    margin-left: 470px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0,0, 0.8);
+    padding: 80px;
+    border-radius: 15px;
 }
-.i-email-login{
-    position: absolute;
-    margin-top: 220px;
-    margin-left: 409px;
+.login h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
 }
-.l-senha-login{
-    position: absolute;
-    font-size: 20px;
-    margin-top: 260px;
-    margin-left: 470px;
+.login-email{
+    display: block;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
-.i-senha-login{
-    position: absolute;
-    margin-top: 280px;
-    margin-left: 409px;
+.login-senha{
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
-.login button{
-    position: absolute;
-    margin-top: 310px;
-    margin-left: 470px;
+.login-submit{
+    display: block;
+    color: white;
+    border: none;
+    background-color: #cc7722;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.login-submit:hover{
+    background-color: #a7621f;
+    transition: 0.3s;
+    cursor: pointer;
 }
 .login-registro{
-    position: absolute;
-    margin-top: 340px;
-    margin-left: 470px;
-    text-decoration: none;
+    color: white;
+    margin-left: 50px;
 }

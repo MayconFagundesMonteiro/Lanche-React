@@ -1,53 +1,68 @@
-.divisor-catalogo{
+.cb{
+    padding-top: 85px;
+    padding-bottom: 100px;
+}
+.catalogo{
     width: 940px;
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    display: flexbox;
+    padding: 5px;
 }
-.conteudo-catalogo{
+.lanches{
     position: relative;
-    display: inline-block;
-    width: 300px;
-    height: 400px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 6.6px;
-    margin-right: 6.6px;
+    width: 290px;
+    height: 350px;
+    border-radius: 5px;
+    display: inline-flex;
+    background-color: #fff7e8;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 9.1px;
 }
-.conteudo img{
-    width: 300px;
-    height: 250px;
-}
-.conteudo h1{
-    font-weight: bold;
-    color:rgb(30, 83, 255);
-    font-size: 20px;
-}
-.conteudo h3{
-   color:darkgray;
-   font-size: 20px;
-   margin-top: 5px;
-   margin-bottom: 5px;
-}
-.conteudo button{
+.lanches img{
+    width: 290px;
+    height: 200px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
     position: absolute;
+}
+.lanches h1{
+    position: absolute;
+    color: gray;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    top: 220px;
+}
+.lanches h2{
+    position: absolute;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    top: 240px;
+}
+.lanches p{
+    position: absolute;
+    display: block;
+    top: 263px;
+}
+.lanches button{
+    position: absolute;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    left: 0;
     bottom: 0;
-    border-style: none;
+    background-color: #cc7722;
     color: white;
-    background-color: rgb(30, 83, 255);
-    border-radius: 3px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-    transition: 0.3s;
+    transition: 0.5s;
 }
-.conteudo p{
-    margin-top: 7px;
-}
-.conteudo button:hover {
+.lanches button:hover{
     transition: 0.3s;
-    background-color: rgb(5, 39, 151);
+    background-color: #a7621f;
+    cursor: pointer;
 }

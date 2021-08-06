@@ -1,0 +1,119 @@
+.bc{
+    padding-top: 68px;
+    padding-bottom: 100px;
+}
+.catalogo-admin{
+    padding-top: 50px;
+    position: relative;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flexbox;
+}
+.admin_novoLanche{
+    position: relative;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 99%;
+    border: none;
+    margin-top: 5px;
+    left:50%;
+    transform: translate(-50%);
+    margin-bottom: 8px;
+    transition: 0.5s;
+    text-align: center;
+}
+.admin_novoLanche:hover{
+    transition: 0.3s;
+    background-color: #a7621f;
+    pointer-events: fill;
+    cursor: pointer;
+}
+.lanches-admin{
+    position: relative;
+    width: 290px;
+    height: 350px;
+    border-radius: 5px;
+    display: inline-flex;
+    background-color: #fffaf0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 9.1px;
+}
+.lanches-admin img{
+    width: 290px;
+    height: 200px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 5px;
+    position: absolute;
+}
+.lanches-admin h1{
+    position: absolute;
+    color: gray;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    top: 220px;
+}
+.lanches-admin h2{
+    position: absolute;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    top: 240px;
+}
+.lanches-admin p{
+    position: absolute;
+    display: block;
+    top: 263px;
+}
+.catalogo-admin-h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 7px;
+    background-color: #a7621f;
+    color: white;
+    width: 450px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: fixed;
+    z-index: 10;
+}
+.catalogo-admin_editar{
+    position: absolute;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 48%;
+    left: 2%;
+    bottom: 0;
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+.catalogo-admin_deletar{
+    position: absolute;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 48%;
+    left: 50%;
+    bottom: 0;
+    background-color: red;
+    color: white;
+    transition: 0.5s;
+}
+.lanches-admin button:hover{
+    transition: 0.3s;
+    background-color: #a7621f;
+    cursor: pointer;
+}
